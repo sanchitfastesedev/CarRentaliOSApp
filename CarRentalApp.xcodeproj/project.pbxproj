@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180B24522CC26D2A00E65BFC /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24512CC26D2A00E65BFC /* CarBookingApp.swift */; };
-		180B24542CC26D2A00E65BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24532CC26D2A00E65BFC /* ContentView.swift */; };
+		180B24522CC26D2A00E65BFC /* CarRentalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24512CC26D2A00E65BFC /* CarRentalApp.swift */; };
 		180B24562CC26D2E00E65BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B24552CC26D2E00E65BFC /* Assets.xcassets */; };
 		180B24592CC26D2E00E65BFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B24582CC26D2E00E65BFC /* Preview Assets.xcassets */; };
 		180B24632CC26D3100E65BFC /* CarBookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24622CC26D3100E65BFC /* CarBookingAppTests.swift */; };
@@ -20,13 +19,25 @@
 		18F46F4F2CC2825B0003EFF7 /* NearByCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F4E2CC2825B0003EFF7 /* NearByCarViewModel.swift */; };
 		18F46F512CC285E70003EFF7 /* YralIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F502CC285E70003EFF7 /* YralIcon.swift */; };
 		18F46F532CC288570003EFF7 /* CarInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F522CC288570003EFF7 /* CarInfoView.swift */; };
-		18F46F552CC289280003EFF7 /* CarinfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F542CC289280003EFF7 /* CarinfoViewModel.swift */; };
 		18F46F592CC291E90003EFF7 /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F582CC291E90003EFF7 /* UIColor+Helper.swift */; };
 		18F46F5B2CC2920F0003EFF7 /* Color+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F5A2CC2920F0003EFF7 /* Color+Helper.swift */; };
 		18F46F5D2CC294CF0003EFF7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F5C2CC294CF0003EFF7 /* Utility.swift */; };
 		18F46F5F2CC2965C0003EFF7 /* CarOwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F5E2CC2965C0003EFF7 /* CarOwnerView.swift */; };
 		18F46F612CC29DF40003EFF7 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F602CC29DF40003EFF7 /* CarListView.swift */; };
 		18F46F632CC2A13E0003EFF7 /* CarDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F622CC2A13E0003EFF7 /* CarDetailsView.swift */; };
+		18F46F672CC2ED4D0003EFF7 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F662CC2ED4D0003EFF7 /* SectionHeader.swift */; };
+		18F46F7C2CC2EF6F0003EFF7 /* Barlow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F782CC2EF6F0003EFF7 /* Barlow-Thin.ttf */; };
+		18F46F7D2CC2EF6F0003EFF7 /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F6E2CC2EF6F0003EFF7 /* Barlow-ExtraLight.ttf */; };
+		18F46F7E2CC2EF6F0003EFF7 /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F732CC2EF6F0003EFF7 /* Barlow-Medium.ttf */; };
+		18F46F7F2CC2EF6F0003EFF7 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F752CC2EF6F0003EFF7 /* Barlow-Regular.ttf */; };
+		18F46F822CC2EF6F0003EFF7 /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F762CC2EF6F0003EFF7 /* Barlow-SemiBold.ttf */; };
+		18F46F842CC2EF6F0003EFF7 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F7A2CC2EF6F0003EFF7 /* OFL.txt */; };
+		18F46F862CC2EF6F0003EFF7 /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F682CC2EF6F0003EFF7 /* Barlow-Black.ttf */; };
+		18F46F882CC2EF6F0003EFF7 /* Barlow-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F6C2CC2EF6F0003EFF7 /* Barlow-ExtraBold.ttf */; };
+		18F46F8C2CC2EF6F0003EFF7 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F702CC2EF6F0003EFF7 /* Barlow-Italic.ttf */; };
+		18F46F8D2CC2EF6F0003EFF7 /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F6A2CC2EF6F0003EFF7 /* Barlow-Bold.ttf */; };
+		18F46F8E2CC2EF6F0003EFF7 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F712CC2EF6F0003EFF7 /* Barlow-Light.ttf */; };
+		18F46F912CC2F4F30003EFF7 /* UIFont+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F902CC2F4F30003EFF7 /* UIFont+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +59,7 @@
 
 /* Begin PBXFileReference section */
 		180B244E2CC26D2A00E65BFC /* CarRentalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarRentalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		180B24512CC26D2A00E65BFC /* CarBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingApp.swift; sourceTree = "<group>"; };
-		180B24532CC26D2A00E65BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		180B24512CC26D2A00E65BFC /* CarRentalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalApp.swift; sourceTree = "<group>"; };
 		180B24552CC26D2E00E65BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180B24582CC26D2E00E65BFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		180B245E2CC26D3100E65BFC /* CarRentalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRentalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,13 +73,25 @@
 		18F46F4E2CC2825B0003EFF7 /* NearByCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByCarViewModel.swift; sourceTree = "<group>"; };
 		18F46F502CC285E70003EFF7 /* YralIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YralIcon.swift; sourceTree = "<group>"; };
 		18F46F522CC288570003EFF7 /* CarInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoView.swift; sourceTree = "<group>"; };
-		18F46F542CC289280003EFF7 /* CarinfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarinfoViewModel.swift; sourceTree = "<group>"; };
 		18F46F582CC291E90003EFF7 /* UIColor+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
 		18F46F5A2CC2920F0003EFF7 /* Color+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Helper.swift"; sourceTree = "<group>"; };
 		18F46F5C2CC294CF0003EFF7 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		18F46F5E2CC2965C0003EFF7 /* CarOwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOwnerView.swift; sourceTree = "<group>"; };
 		18F46F602CC29DF40003EFF7 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
 		18F46F622CC2A13E0003EFF7 /* CarDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsView.swift; sourceTree = "<group>"; };
+		18F46F662CC2ED4D0003EFF7 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		18F46F682CC2EF6F0003EFF7 /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Black.ttf"; sourceTree = "<group>"; };
+		18F46F6A2CC2EF6F0003EFF7 /* Barlow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Bold.ttf"; sourceTree = "<group>"; };
+		18F46F6C2CC2EF6F0003EFF7 /* Barlow-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraBold.ttf"; sourceTree = "<group>"; };
+		18F46F6E2CC2EF6F0003EFF7 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
+		18F46F702CC2EF6F0003EFF7 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Italic.ttf"; sourceTree = "<group>"; };
+		18F46F712CC2EF6F0003EFF7 /* Barlow-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Light.ttf"; sourceTree = "<group>"; };
+		18F46F732CC2EF6F0003EFF7 /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
+		18F46F752CC2EF6F0003EFF7 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
+		18F46F762CC2EF6F0003EFF7 /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBold.ttf"; sourceTree = "<group>"; };
+		18F46F782CC2EF6F0003EFF7 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Thin.ttf"; sourceTree = "<group>"; };
+		18F46F7A2CC2EF6F0003EFF7 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		18F46F902CC2F4F30003EFF7 /* UIFont+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				180B24502CC26D2A00E65BFC /* CarRentalApp */,
-				180B24612CC26D3100E65BFC /* CarBookingAppTests */,
+				180B24612CC26D3100E65BFC /* CarRentalAppTests */,
 				180B246B2CC26D3100E65BFC /* CarBookingAppUITests */,
 				180B244F2CC26D2A00E65BFC /* Products */,
 			);
@@ -120,17 +142,12 @@
 		180B24502CC26D2A00E65BFC /* CarRentalApp */ = {
 			isa = PBXGroup;
 			children = (
-				18F46F622CC2A13E0003EFF7 /* CarDetailsView.swift */,
-				18F46F602CC29DF40003EFF7 /* CarListView.swift */,
-				18F46F5C2CC294CF0003EFF7 /* Utility.swift */,
-				18F46F4C2CC280970003EFF7 /* Coordinator.swift */,
 				18F46F492CC280290003EFF7 /* NearByCar */,
 				180B24812CC27EFC00E65BFC /* Common */,
-				180B24512CC26D2A00E65BFC /* CarBookingApp.swift */,
-				180B24532CC26D2A00E65BFC /* ContentView.swift */,
+				180B24512CC26D2A00E65BFC /* CarRentalApp.swift */,
 				180B24552CC26D2E00E65BFC /* Assets.xcassets */,
+				18F46F7B2CC2EF6F0003EFF7 /* Barlow */,
 				180B24572CC26D2E00E65BFC /* Preview Content */,
-				18F46F5E2CC2965C0003EFF7 /* CarOwnerView.swift */,
 			);
 			path = CarRentalApp;
 			sourceTree = "<group>";
@@ -143,12 +160,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		180B24612CC26D3100E65BFC /* CarBookingAppTests */ = {
+		180B24612CC26D3100E65BFC /* CarRentalAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				180B24622CC26D3100E65BFC /* CarBookingAppTests.swift */,
 			);
-			path = CarBookingAppTests;
+			path = CarRentalAppTests;
 			sourceTree = "<group>";
 		};
 		180B246B2CC26D3100E65BFC /* CarBookingAppUITests */ = {
@@ -163,10 +180,16 @@
 		180B24812CC27EFC00E65BFC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				18F46F5E2CC2965C0003EFF7 /* CarOwnerView.swift */,
+				18F46F5C2CC294CF0003EFF7 /* Utility.swift */,
+				18F46F4C2CC280970003EFF7 /* Coordinator.swift */,
+				18F46F622CC2A13E0003EFF7 /* CarDetailsView.swift */,
 				180B247B2CC26D9F00E65BFC /* YralSegmentControlBar.swift */,
 				18F46F502CC285E70003EFF7 /* YralIcon.swift */,
 				18F46F582CC291E90003EFF7 /* UIColor+Helper.swift */,
 				18F46F5A2CC2920F0003EFF7 /* Color+Helper.swift */,
+				18F46F662CC2ED4D0003EFF7 /* SectionHeader.swift */,
+				18F46F902CC2F4F30003EFF7 /* UIFont+Helper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -174,12 +197,30 @@
 		18F46F492CC280290003EFF7 /* NearByCar */ = {
 			isa = PBXGroup;
 			children = (
+				18F46F602CC29DF40003EFF7 /* CarListView.swift */,
 				18F46F4A2CC280540003EFF7 /* NearByCarView.swift */,
 				18F46F4E2CC2825B0003EFF7 /* NearByCarViewModel.swift */,
 				18F46F522CC288570003EFF7 /* CarInfoView.swift */,
-				18F46F542CC289280003EFF7 /* CarinfoViewModel.swift */,
 			);
 			path = NearByCar;
+			sourceTree = "<group>";
+		};
+		18F46F7B2CC2EF6F0003EFF7 /* Barlow */ = {
+			isa = PBXGroup;
+			children = (
+				18F46F682CC2EF6F0003EFF7 /* Barlow-Black.ttf */,
+				18F46F6A2CC2EF6F0003EFF7 /* Barlow-Bold.ttf */,
+				18F46F6C2CC2EF6F0003EFF7 /* Barlow-ExtraBold.ttf */,
+				18F46F6E2CC2EF6F0003EFF7 /* Barlow-ExtraLight.ttf */,
+				18F46F702CC2EF6F0003EFF7 /* Barlow-Italic.ttf */,
+				18F46F712CC2EF6F0003EFF7 /* Barlow-Light.ttf */,
+				18F46F732CC2EF6F0003EFF7 /* Barlow-Medium.ttf */,
+				18F46F752CC2EF6F0003EFF7 /* Barlow-Regular.ttf */,
+				18F46F762CC2EF6F0003EFF7 /* Barlow-SemiBold.ttf */,
+				18F46F782CC2EF6F0003EFF7 /* Barlow-Thin.ttf */,
+				18F46F7A2CC2EF6F0003EFF7 /* OFL.txt */,
+			);
+			path = Barlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +287,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					180B244D2CC26D2A00E65BFC = {
 						CreatedOnToolsVersion = 15.4;
@@ -286,6 +327,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F46F7C2CC2EF6F0003EFF7 /* Barlow-Thin.ttf in Resources */,
+				18F46F7D2CC2EF6F0003EFF7 /* Barlow-ExtraLight.ttf in Resources */,
+				18F46F7E2CC2EF6F0003EFF7 /* Barlow-Medium.ttf in Resources */,
+				18F46F7F2CC2EF6F0003EFF7 /* Barlow-Regular.ttf in Resources */,
+				18F46F822CC2EF6F0003EFF7 /* Barlow-SemiBold.ttf in Resources */,
+				18F46F842CC2EF6F0003EFF7 /* OFL.txt in Resources */,
+				18F46F862CC2EF6F0003EFF7 /* Barlow-Black.ttf in Resources */,
+				18F46F882CC2EF6F0003EFF7 /* Barlow-ExtraBold.ttf in Resources */,
+				18F46F8C2CC2EF6F0003EFF7 /* Barlow-Italic.ttf in Resources */,
+				18F46F8D2CC2EF6F0003EFF7 /* Barlow-Bold.ttf in Resources */,
+				18F46F8E2CC2EF6F0003EFF7 /* Barlow-Light.ttf in Resources */,
 				180B24592CC26D2E00E65BFC /* Preview Assets.xcassets in Resources */,
 				180B24562CC26D2E00E65BFC /* Assets.xcassets in Resources */,
 			);
@@ -315,15 +367,15 @@
 				18F46F532CC288570003EFF7 /* CarInfoView.swift in Sources */,
 				180B247C2CC26D9F00E65BFC /* YralSegmentControlBar.swift in Sources */,
 				18F46F512CC285E70003EFF7 /* YralIcon.swift in Sources */,
-				180B24542CC26D2A00E65BFC /* ContentView.swift in Sources */,
-				18F46F552CC289280003EFF7 /* CarinfoViewModel.swift in Sources */,
-				180B24522CC26D2A00E65BFC /* CarBookingApp.swift in Sources */,
+				180B24522CC26D2A00E65BFC /* CarRentalApp.swift in Sources */,
 				18F46F5D2CC294CF0003EFF7 /* Utility.swift in Sources */,
 				18F46F4B2CC280540003EFF7 /* NearByCarView.swift in Sources */,
 				18F46F592CC291E90003EFF7 /* UIColor+Helper.swift in Sources */,
 				18F46F632CC2A13E0003EFF7 /* CarDetailsView.swift in Sources */,
 				18F46F4F2CC2825B0003EFF7 /* NearByCarViewModel.swift in Sources */,
 				18F46F612CC29DF40003EFF7 /* CarListView.swift in Sources */,
+				18F46F672CC2ED4D0003EFF7 /* SectionHeader.swift in Sources */,
+				18F46F912CC2F4F30003EFF7 /* UIFont+Helper.swift in Sources */,
 				18F46F5F2CC2965C0003EFF7 /* CarOwnerView.swift in Sources */,
 				18F46F4D2CC280970003EFF7 /* Coordinator.swift in Sources */,
 				18F46F5B2CC2920F0003EFF7 /* Color+Helper.swift in Sources */,
@@ -492,6 +544,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CarRentalApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarRentalApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -519,6 +572,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CarRentalApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarRentalApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -539,7 +593,6 @@
 		180B24762CC26D3100E65BFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -558,7 +611,6 @@
 		180B24772CC26D3100E65BFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -577,7 +629,6 @@
 		180B24792CC26D3100E65BFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -594,7 +645,6 @@
 		180B247A2CC26D3100E65BFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

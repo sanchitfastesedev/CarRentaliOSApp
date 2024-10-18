@@ -1,13 +1,13 @@
 //
-//  CarBookingAppUITests.swift
-//  CarBookingAppUITests
+//  CarRentalAppUITests.swift
+//  CarRentalAppUITests
 //
 //  Created by Sanchit Mehta on 18/10/24.
 //
 
 import XCTest
 
-final class CarBookingAppUITests: XCTestCase {
+final class CarRentalAppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -56,12 +56,13 @@ struct CarDetailsView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .p6) {
             Text(carInfo.name)
-                .font(.system(size: .p20, weight: .bold))
+                .font(.customBarlow(weight: .semiBold, size: 20))
                 .foregroundColor(textColor)
             
             HStack(spacing: .p10) {
                 Label {
-                    Text("\(carInfo.distanceTravelled) km")
+                    Text("> \(carInfo.distanceTravelled) km")
+                        .font(.customBarlow(weight: .regular, size: 12))
                 } icon: {
                     Image(YralIcon.direction.icon)
                         .renderingMode(.template)
@@ -69,6 +70,7 @@ struct CarDetailsView: View {
                 
                 Label {
                     Text("\(carInfo.capacity) L")
+                        .font(.customBarlow(weight: .regular, size: 12))
                 } icon: {
                     Image(capacityImage.icon)
                         .renderingMode(.template)

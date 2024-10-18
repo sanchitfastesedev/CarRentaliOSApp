@@ -10,7 +10,7 @@ import SwiftUI
 struct CarOwner: Decodable {
     let id: String
     let name: String
-    let worth: Double
+    let worth: Int
     let avatarURL: String // will be url in actual case
 }
 
@@ -27,10 +27,11 @@ struct CarOwnerView: View {
                 .padding(.top,.p26)
             Text(owner.name)
                 .padding(.top, .p8)
+                .font(.customBarlow(weight: .medium, size: 16))
             Text("$\(owner.worth)")
                 .padding(.top, .p2)
                 .padding(.bottom, .p10)
-                .font(.system(size: 20, weight: .bold))
+                .font(.customBarlow(weight: .bold, size: 14))
         }
         .cornerRadius(.p20)
     }

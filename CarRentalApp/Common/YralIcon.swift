@@ -1,6 +1,6 @@
 //
 //  YralIcon.swift
-//  CarBookingApp
+//  CarRentalApp
 //
 //  Created by Sanchit Mehta on 18/10/24.
 //

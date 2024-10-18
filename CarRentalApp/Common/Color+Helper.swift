@@ -12,5 +12,6 @@ extension Color {
     static let textLightGray = Color(UIColor.textLightGray)
     static let textLightGray2 = Color(UIColor.textLightGray2)
     static let background = Color(UIColor.background)
+    static let divider = Color(UIColor.divider)
 }
 

@@ -1,6 +1,6 @@
 //
 //  NearByCarViewModel.swift
-//  CarBookingApp
+//  CarRentalApp
 //
 //  Created by Sanchit Mehta on 18/10/24.
 //
@@ -10,7 +10,7 @@ import Foundation
 struct CarAPIResponse: Decodable {
     let info: CarInfo
     let carOwner: CarOwner
-    let nearbyCars: [CarInfo]
+    let moreCars: [CarInfo]
 }
 
 
@@ -54,7 +54,7 @@ final class NearByCarViewModel: ObservableObject {
                     "worth": 4253,
                     "avatarURL": "carOwner"
                   },
-                  "nearbyCars": [
+                  "moreCars": [
                     {
                       "id": "\(UUID().uuidString)",
                       "name": "Corolla Cross",

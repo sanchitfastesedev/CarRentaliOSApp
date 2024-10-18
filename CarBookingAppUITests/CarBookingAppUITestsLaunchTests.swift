@@ -1,13 +1,13 @@
 //
-//  CarBookingAppUITestsLaunchTests.swift
-//  CarBookingAppUITests
+//  CarRentalAppUITestsLaunchTests.swift
+//  CarRentalAppUITests
 //
 //  Created by Sanchit Mehta on 18/10/24.
 //
 
 import XCTest
 
-final class CarBookingAppUITestsLaunchTests: XCTestCase {
+final class CarRentalAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

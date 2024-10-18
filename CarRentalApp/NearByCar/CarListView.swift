@@ -11,10 +11,12 @@ struct CarListView: View {
     
     var cars = [CarInfo]()
     
+    @EnvironmentObject var coordinator: Coordinator
+    
     var body: some View {
          VStack {
              List {
-                 Section(header: sectionHeader) {
+                 Section(header: SectionHeader(title: "More Cars", icon: YralIcon.more.icon)) {
                      ForEach(cars) { car in
                          HStack(alignment: .center) {
                              VStack(alignment: .leading) {
@@ -33,6 +35,8 @@ struct CarListView: View {
                              Spacer()
                              tapIndicator
                                  .padding(.trailing, .p20)
+                         }.onTapGesture {
+                             coordinator.navigate(to: .carDetails(info: car))
                          }
 
                      }
@@ -43,33 +47,10 @@ struct CarListView: View {
              }
              .listStyle(.plain)
              .background(Color.black)
-             .navigationDestination(for: String.self) { car in
-                 Text(car)
-             }
          }
          .cornerRadius(.p20)
      }
-    
-    private var sectionHeader: some View {
-        HStack {
-            Text("More Cars")
-                .foregroundColor(.white)
-                .padding(.leading, .p20)
 
-            Spacer()
-            Button {
-                // some action
-            } label: {
-                Image(YralIcon.more.icon)
-                    .foregroundColor(.white)
-                    .padding(.trailing, .p20)
-            }
-
-            
-        }
-        .padding(.vertical, .p10)
-        .background(Color.black)
-    }
     
     private var tapIndicator: some View {
         ZStack {

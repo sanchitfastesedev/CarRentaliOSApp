@@ -1,6 +1,6 @@
 //
 //  Coordinator.swift
-//  CarBookingApp
+//  CarRentalApp
 //
 //  Created by Sanchit Mehta on 18/10/24.
 //
@@ -9,7 +9,8 @@ import SwiftUI
 
 
 enum Destination: Hashable {
-    case nearByCar
+    case carDetails(info: CarInfo)
+    case moreCars(cars: [CarInfo])
     case checkoutCar
 }
 
@@ -42,6 +43,15 @@ class Coordinator: ObservableObject {
 
         @ViewBuilder
         func destinationView(_ destination: Destination) -> some SwiftUI.View {
+            switch destination {
+            case .carDetails(let info):
+                CarInfoView(info: info)
+            case .checkoutCar:
+                Text("Checkout Car")
+            case .moreCars(let cars):
+                CarListView(cars:cars)
+            }
+                           
         }
     }
 }

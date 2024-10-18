@@ -1,6 +1,6 @@
 //
 //  CarInfoView.swift
-//  CarBookingApp
+//  CarRentalApp
 //
 //  Created by Sanchit Mehta on 18/10/24.
 //
@@ -13,14 +13,14 @@ enum CarType: String, Decodable {
     case diesel
 }
 
-struct CarInfo: Identifiable, Decodable {
+struct CarInfo: Identifiable, Decodable, Hashable {
     var id: String
     var name: String
     var image: String // will be a url in  actual app
     var capacity: Int
     var distanceTravelled: Int
     var carType: CarType
-    var rentalCostPerHour: Float
+    var rentalCostPerHour: Int
 }
 
 struct CarInfoView: View {
@@ -30,7 +30,9 @@ struct CarInfoView: View {
         VStack(alignment: .leading) {
             Text("NEAREST CAR")
                 .kerning(4.0)
-                .padding(.p20)
+                .font(.customBarlow(weight: .regular, size: 12))
+                .padding([.top, .leading],
+                         .p20)
                 .foregroundStyle(Color.lightGray)
             Image(info.image)
             
@@ -38,7 +40,9 @@ struct CarInfoView: View {
                 CarDetailsView(carInfo: info, theme: .light)
                     .padding(.leading, .p20)
                 Spacer()
-                Text("$\(info.rentalCostPerHour)").padding()
+                Text("$\(info.rentalCostPerHour)/h")
+                    .padding()
+                    .font(.customBarlow(weight: .semiBold, size: 1))
             }
             .padding(.bottom, .p10)
         }.background(Color.background)

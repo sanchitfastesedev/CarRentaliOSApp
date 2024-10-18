@@ -1,6 +1,6 @@
 //
 //  YralSegmentBar.swift
-//  CarBookingApp
+//  CarRentalApp
 //
 //  Created by Sanchit Mehta on 18/10/24.
 //
@@ -25,9 +25,11 @@ struct YralSegmentedControlBar: View {
                     selectedSegmentId = item.id
                 } label: {
                     HStack {
+                        Image(item.icon)
                         Text(item.title)
                             .foregroundStyle(.black)
-                        Image(item.icon)
+                            .font(.customBarlow(weight: .semiBold, size: 16))
+                       
                     }
                 }
             }

@@ -13,6 +13,7 @@ extension UIColor {
     static let textLightGray2 = UIColor(hex: 0xD8D8D8)
     static let textLightGray = UIColor(hex: 0x2C2B34)
     static let background = UIColor(hex: 0xF3F3F3)
+    static let divider = UIColor(hex: 0x4B4B4B)
 }
 
 extension UIColor {

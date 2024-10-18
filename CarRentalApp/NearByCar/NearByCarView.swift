@@ -1,6 +1,6 @@
 //
 //  NearByCarView.swift
-//  CarBookingApp
+//  CarRentalApp
 //
 //  Created by Sanchit Mehta on 18/10/24.
 //
@@ -14,8 +14,20 @@ struct NearByCarView: View {
     }
     
     @StateObject var viewModel = NearByCarViewModel()
+    @StateObject var coordinator = Coordinator()
     
     var body: some View {
+        navigationStack
+            .environmentObject(coordinator)
+    }
+    
+    var navigationStack: some View {
+        Coordinator.View {
+            contentView
+        }
+    }
+    
+    private var contentView: some View {
         VStack(spacing: .p10) {
             YralSegmentedControlBar(segmentItems: viewModel.segmentControls, selectedSegmentId: $viewModel.selectedSegmentId)
             if (viewModel.showInformationContent) {
@@ -24,6 +36,7 @@ struct NearByCarView: View {
                 notificationContent
             }
         }.padding()
+        
     }
     
     private var notificationContent: some View {
@@ -36,7 +49,7 @@ struct NearByCarView: View {
     
     @ViewBuilder
     private var informationContent: some View {
-        guard let data = viewModel.carAPIResponse else { return EmptyView() }
+        guard let data = viewModel.carAPIResponse else { return Color.clear }
         return VStack(spacing: .p10) {
             CarInfoView(info: data.info)
             GeometryReader { geometry in
@@ -52,9 +65,11 @@ struct NearByCarView: View {
                         .scaledToFit()
                 }.frame(height: geometry.size.height)
             }.frame(height: Constant.ownerCardHeight)
-            CarListView(cars: data.nearbyCars)
+            CarListView(cars: data.moreCars)
         }
     }
+    
+
 }
 
 #Preview {
