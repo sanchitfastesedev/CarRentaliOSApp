@@ -16,7 +16,9 @@ struct CarListView: View {
     var body: some View {
          VStack {
              List {
-                 Section(header: SectionHeader(title: "More Cars", icon: YralIcon.more.icon)) {
+                 Section(header: SectionHeader(title: "More Cars", icon: YralIcon.more.icon, tapAction: {
+                     coordinator.navigate(to: .moreCars(cars: cars))
+                 })) {
                      ForEach(cars) { car in
                          HStack(alignment: .center) {
                              VStack(alignment: .leading) {

@@ -10,6 +10,8 @@ import SwiftUI
 struct SectionHeader: View {
     let title: String
     let icon: String
+    var tapAction: (() -> Void?)? = nil
+    
     
     var body: some View {
         HStack {
@@ -20,7 +22,7 @@ struct SectionHeader: View {
 
             Spacer()
             Button {
-                // some action
+                tapAction?()
             } label: {
                 Image(icon)
                     .foregroundColor(.white)
