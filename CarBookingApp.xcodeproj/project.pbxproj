@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180B24522CC26D2A00E65BFC /* CarBookingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24512CC26D2A00E65BFC /* CarBookingAppApp.swift */; };
+		180B24542CC26D2A00E65BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24532CC26D2A00E65BFC /* ContentView.swift */; };
+		180B24562CC26D2E00E65BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B24552CC26D2E00E65BFC /* Assets.xcassets */; };
+		180B24592CC26D2E00E65BFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B24582CC26D2E00E65BFC /* Preview Assets.xcassets */; };
+		180B24632CC26D3100E65BFC /* CarBookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24622CC26D3100E65BFC /* CarBookingAppTests.swift */; };
+		180B246D2CC26D3100E65BFC /* CarBookingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B246C2CC26D3100E65BFC /* CarBookingAppUITests.swift */; };
+		180B246F2CC26D3100E65BFC /* CarBookingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B246E2CC26D3100E65BFC /* CarBookingAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180B245F2CC26D3100E65BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180B24462CC26D2A00E65BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180B244D2CC26D2A00E65BFC;
+			remoteInfo = CarBookingApp;
+		};
+		180B24692CC26D3100E65BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180B24462CC26D2A00E65BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180B244D2CC26D2A00E65BFC;
+			remoteInfo = CarBookingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180B244E2CC26D2A00E65BFC /* CarBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180B24512CC26D2A00E65BFC /* CarBookingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingAppApp.swift; sourceTree = "<group>"; };
+		180B24532CC26D2A00E65BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		180B24552CC26D2E00E65BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180B24582CC26D2E00E65BFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		180B245E2CC26D3100E65BFC /* CarBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180B24622CC26D3100E65BFC /* CarBookingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingAppTests.swift; sourceTree = "<group>"; };
+		180B24682CC26D3100E65BFC /* CarBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180B246C2CC26D3100E65BFC /* CarBookingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingAppUITests.swift; sourceTree = "<group>"; };
+		180B246E2CC26D3100E65BFC /* CarBookingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180B244B2CC26D2A00E65BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180B245B2CC26D3100E65BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180B24652CC26D3100E65BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180B24452CC26D2A00E65BFC = {
+			isa = PBXGroup;
+			children = (
+				180B24502CC26D2A00E65BFC /* CarBookingApp */,
+				180B24612CC26D3100E65BFC /* CarBookingAppTests */,
+				180B246B2CC26D3100E65BFC /* CarBookingAppUITests */,
+				180B244F2CC26D2A00E65BFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180B244F2CC26D2A00E65BFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180B244E2CC26D2A00E65BFC /* CarBookingApp.app */,
+				180B245E2CC26D3100E65BFC /* CarBookingAppTests.xctest */,
+				180B24682CC26D3100E65BFC /* CarBookingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180B24502CC26D2A00E65BFC /* CarBookingApp */ = {
+			isa = PBXGroup;
+			children = (
+				180B24512CC26D2A00E65BFC /* CarBookingAppApp.swift */,
+				180B24532CC26D2A00E65BFC /* ContentView.swift */,
+				180B24552CC26D2E00E65BFC /* Assets.xcassets */,
+				180B24572CC26D2E00E65BFC /* Preview Content */,
+			);
+			path = CarBookingApp;
+			sourceTree = "<group>";
+		};
+		180B24572CC26D2E00E65BFC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				180B24582CC26D2E00E65BFC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		180B24612CC26D3100E65BFC /* CarBookingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				180B24622CC26D3100E65BFC /* CarBookingAppTests.swift */,
+			);
+			path = CarBookingAppTests;
+			sourceTree = "<group>";
+		};
+		180B246B2CC26D3100E65BFC /* CarBookingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180B246C2CC26D3100E65BFC /* CarBookingAppUITests.swift */,
+				180B246E2CC26D3100E65BFC /* CarBookingAppUITestsLaunchTests.swift */,
+			);
+			path = CarBookingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180B244D2CC26D2A00E65BFC /* CarBookingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180B24722CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingApp" */;
+			buildPhases = (
+				180B244A2CC26D2A00E65BFC /* Sources */,
+				180B244B2CC26D2A00E65BFC /* Frameworks */,
+				180B244C2CC26D2A00E65BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarBookingApp;
+			productName = CarBookingApp;
+			productReference = 180B244E2CC26D2A00E65BFC /* CarBookingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180B245D2CC26D3100E65BFC /* CarBookingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180B24752CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingAppTests" */;
+			buildPhases = (
+				180B245A2CC26D3100E65BFC /* Sources */,
+				180B245B2CC26D3100E65BFC /* Frameworks */,
+				180B245C2CC26D3100E65BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180B24602CC26D3100E65BFC /* PBXTargetDependency */,
+			);
+			name = CarBookingAppTests;
+			productName = CarBookingAppTests;
+			productReference = 180B245E2CC26D3100E65BFC /* CarBookingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		180B24672CC26D3100E65BFC /* CarBookingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180B24782CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingAppUITests" */;
+			buildPhases = (
+				180B24642CC26D3100E65BFC /* Sources */,
+				180B24652CC26D3100E65BFC /* Frameworks */,
+				180B24662CC26D3100E65BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180B246A2CC26D3100E65BFC /* PBXTargetDependency */,
+			);
+			name = CarBookingAppUITests;
+			productName = CarBookingAppUITests;
+			productReference = 180B24682CC26D3100E65BFC /* CarBookingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180B24462CC26D2A00E65BFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					180B244D2CC26D2A00E65BFC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					180B245D2CC26D3100E65BFC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 180B244D2CC26D2A00E65BFC;
+					};
+					180B24672CC26D3100E65BFC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 180B244D2CC26D2A00E65BFC;
+					};
+				};
+			};
+			buildConfigurationList = 180B24492CC26D2A00E65BFC /* Build configuration list for PBXProject "CarBookingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180B24452CC26D2A00E65BFC;
+			productRefGroup = 180B244F2CC26D2A00E65BFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180B244D2CC26D2A00E65BFC /* CarBookingApp */,
+				180B245D2CC26D3100E65BFC /* CarBookingAppTests */,
+				180B24672CC26D3100E65BFC /* CarBookingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180B244C2CC26D2A00E65BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180B24592CC26D2E00E65BFC /* Preview Assets.xcassets in Resources */,
+				180B24562CC26D2E00E65BFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180B245C2CC26D3100E65BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180B24662CC26D3100E65BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180B244A2CC26D2A00E65BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180B24542CC26D2A00E65BFC /* ContentView.swift in Sources */,
+				180B24522CC26D2A00E65BFC /* CarBookingAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180B245A2CC26D3100E65BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180B24632CC26D3100E65BFC /* CarBookingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180B24642CC26D3100E65BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180B246D2CC26D3100E65BFC /* CarBookingAppUITests.swift in Sources */,
+				180B246F2CC26D3100E65BFC /* CarBookingAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180B24602CC26D3100E65BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180B244D2CC26D2A00E65BFC /* CarBookingApp */;
+			targetProxy = 180B245F2CC26D3100E65BFC /* PBXContainerItemProxy */;
+		};
+		180B246A2CC26D3100E65BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180B244D2CC26D2A00E65BFC /* CarBookingApp */;
+			targetProxy = 180B24692CC26D3100E65BFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		180B24702CC26D3100E65BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		180B24712CC26D3100E65BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		180B24732CC26D3100E65BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarBookingApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yral.carbooking.org.CarBookingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		180B24742CC26D3100E65BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarBookingApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yral.carbooking.org.CarBookingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		180B24762CC26D3100E65BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yral.carbooking.org.CarBookingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBookingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarBookingApp";
+			};
+			name = Debug;
+		};
+		180B24772CC26D3100E65BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yral.carbooking.org.CarBookingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBookingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarBookingApp";
+			};
+			name = Release;
+		};
+		180B24792CC26D3100E65BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yral.carbooking.org.CarBookingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarBookingApp;
+			};
+			name = Debug;
+		};
+		180B247A2CC26D3100E65BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yral.carbooking.org.CarBookingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarBookingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180B24492CC26D2A00E65BFC /* Build configuration list for PBXProject "CarBookingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180B24702CC26D3100E65BFC /* Debug */,
+				180B24712CC26D3100E65BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180B24722CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180B24732CC26D3100E65BFC /* Debug */,
+				180B24742CC26D3100E65BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180B24752CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180B24762CC26D3100E65BFC /* Debug */,
+				180B24772CC26D3100E65BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180B24782CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180B24792CC26D3100E65BFC /* Debug */,
+				180B247A2CC26D3100E65BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180B24462CC26D2A00E65BFC /* Project object */;
+}
