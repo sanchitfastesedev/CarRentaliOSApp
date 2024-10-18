@@ -37,7 +37,9 @@ struct CarListView: View {
                              Spacer()
                              tapIndicator
                                  .padding(.trailing, .p20)
-                         }.onTapGesture {
+                         }
+                         .background(Color.black)
+                         .onTapGesture {
                              coordinator.navigate(to: .carDetails(info: car))
                          }
 
@@ -49,6 +51,7 @@ struct CarListView: View {
              }
              .listStyle(.plain)
              .background(Color.black)
+             .frame(maxHeight: (CGFloat(cars.count) * .p20 * .p4 + .p20) )
          }
          .cornerRadius(.p20)
      }

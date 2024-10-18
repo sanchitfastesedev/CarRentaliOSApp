@@ -54,6 +54,8 @@ struct NearByCarView: View {
             CarInfoView(info: data.info)
             carOwnerAndMapGrid(owner: data.carOwner)
             CarListView(cars: data.moreCars)
+            
+            Spacer()
         }
     }
     

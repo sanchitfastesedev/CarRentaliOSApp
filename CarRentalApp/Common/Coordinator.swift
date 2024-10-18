@@ -49,7 +49,11 @@ class Coordinator: ObservableObject {
             case .checkoutCar:
                 Text("Checkout Car")
             case .moreCars(let cars):
-                CarListView(cars:cars)
+                VStack {
+                    CarListView(cars:cars)
+                    Spacer()
+                }.navigationTitle("More Cars")
+
             }
                            
         }
