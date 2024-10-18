@@ -18,6 +18,7 @@ enum YralIcon: String {
     case more
     case rightArrow
     case battery
+    case merecedes
     
     var icon: String {
         self.rawValue

@@ -52,21 +52,28 @@ struct NearByCarView: View {
         guard let data = viewModel.carAPIResponse else { return Color.clear }
         return VStack(spacing: .p10) {
             CarInfoView(info: data.info)
-            GeometryReader { geometry in
-                HStack(spacing: .p10) {
-                    CarOwnerView(owner: data.carOwner)
-                        .frame(width: (geometry.size.width - .p10) / 2, height: geometry.size.height)
-                        .background(Color.background)
-                        .cornerRadius(.p20)
-                    Image(YralIcon.map.icon)
-                        .resizable()
-                        .frame(width: (geometry.size.width - .p10) / 2, height: geometry.size.height)
-                        .cornerRadius(.p20)
-                        .scaledToFit()
-                }.frame(height: geometry.size.height)
-            }.frame(height: Constant.ownerCardHeight)
+            carOwnerAndMapGrid(owner: data.carOwner)
             CarListView(cars: data.moreCars)
         }
+    }
+    
+    @ViewBuilder
+    private func carOwnerAndMapGrid(owner: CarOwner) -> some View {
+        GeometryReader { geometry in
+            HStack(spacing: .p10) {
+                CarOwnerView(owner: owner)
+                    .frame(width: (geometry.size.width - .p10) / 2, height: geometry.size.height)
+                    .background(Color.background)
+                    .cornerRadius(.p20)
+                Image(YralIcon.map.icon)
+                    .resizable()
+                    .frame(width: (geometry.size.width - .p10) / 2, height: geometry.size.height)
+                    .cornerRadius(.p20)
+                    .scaledToFit()
+            }
+            .frame(height: geometry.size.height)
+        }
+        .frame(height: Constant.ownerCardHeight)
     }
     
 

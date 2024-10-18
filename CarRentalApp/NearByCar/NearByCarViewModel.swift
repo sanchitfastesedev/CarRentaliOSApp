@@ -82,6 +82,15 @@ final class NearByCarViewModel: ObservableObject {
                       "carType": "electric",
                       "rentalCostPerHour": 5000
                     },
+                    {
+                      "id": "\(UUID().uuidString)",
+                      "name": "Mercedes",
+                      "image": "mercedes",
+                      "capacity": 5,
+                      "distanceTravelled": 230,
+                      "carType": "diesel",
+                      "rentalCostPerHour": 5000
+                    },
 
                   ]
                 }

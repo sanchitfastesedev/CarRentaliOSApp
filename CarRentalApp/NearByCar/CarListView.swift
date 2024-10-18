@@ -32,7 +32,7 @@ struct CarListView: View {
                              }
                              .padding(.horizontal, .p20)
                              .listRowInsets(EdgeInsets())
-                             .background(Color.black)
+                         //    .background(Color.black)
                              .foregroundColor(.white)
                              Spacer()
                              tapIndicator
