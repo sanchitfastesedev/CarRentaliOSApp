@@ -10,6 +10,8 @@ import UIKit
 
 extension UIColor {
     static let lightGray = UIColor(hex: 0x787878)
+    static let textLightGray2 = UIColor(hex: 0xD8D8D8)
+    static let textLightGray = UIColor(hex: 0x2C2B34)
     static let background = UIColor(hex: 0xF3F3F3)
 }
 

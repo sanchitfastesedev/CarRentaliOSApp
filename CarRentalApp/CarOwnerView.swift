@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CarOwner {
+struct CarOwner: Decodable {
     let id: String
     let name: String
     let worth: Double
@@ -32,7 +32,6 @@ struct CarOwnerView: View {
                 .padding(.bottom, .p10)
                 .font(.system(size: 20, weight: .bold))
         }
-        .background(Color.background)
         .cornerRadius(.p20)
     }
 }

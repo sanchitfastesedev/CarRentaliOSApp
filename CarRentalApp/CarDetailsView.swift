@@ -14,9 +14,7 @@ struct CarDetailsView: View {
         case dark
     }
     
-    var name: String
-    var distanceTravelled: Int
-    var capacity: Int
+    var carInfo: CarInfo
     var theme: Theme
     
     var textColor: Color {
@@ -25,6 +23,15 @@ struct CarDetailsView: View {
             return Color.textLightGray
         case .dark:
             return Color.white
+        }
+    }
+    
+    var subTextColor: Color {
+        switch theme {
+        case .light:
+            return Color.lightGray
+        case .dark:
+            return Color.textLightGray2
         }
     }
     
@@ -37,30 +44,37 @@ struct CarDetailsView: View {
         }
     }
     
+    var capacityImage: YralIcon {
+        switch carInfo.carType {
+        case .electric:
+            YralIcon.battery
+        default:
+            YralIcon.gasPump
+        }
+    }
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(name)
-                .font(.system(size: 20, weight: .bold))
-                .padding(8)
+        VStack(alignment: .leading, spacing: .p6) {
+            Text(carInfo.name)
+                .font(.system(size: .p20, weight: .bold))
                 .foregroundColor(textColor)
             
-            HStack(spacing: 10) {
-                
+            HStack(spacing: .p10) {
                 Label {
-                    Text("\(distanceTravelled) km")
-                        .foregroundColor(.gray)
+                    Text("\(carInfo.distanceTravelled) km")
                 } icon: {
                     Image(YralIcon.direction.icon)
+                        .renderingMode(.template)
                 }
                 
                 Label {
-                    Text("\(capacity) L")
-                        .foregroundColor(.gray)
+                    Text("\(carInfo.capacity) L")
                 } icon: {
-                    Image(YralIcon.gasPump.icon)
+                    Image(capacityImage.icon)
+                        .renderingMode(.template)
                 }
             }
-            .padding([.bottom, .leading], 10)
+            .foregroundColor(subTextColor)
         }
         .background(backgroundColor)
     }

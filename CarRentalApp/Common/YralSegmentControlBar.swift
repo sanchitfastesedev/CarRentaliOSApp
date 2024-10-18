@@ -19,13 +19,14 @@ struct YralSegmentedControlBar: View {
     @Binding var selectedSegmentId: String
     
     var body: some View {
-        HStack {
+        HStack(spacing: .p20) {
             ForEach(segmentItems) { item in
                 Button {
                     selectedSegmentId = item.id
                 } label: {
                     HStack {
                         Text(item.title)
+                            .foregroundStyle(.black)
                         Image(item.icon)
                     }
                 }

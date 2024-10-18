@@ -12,33 +12,75 @@ struct CarListView: View {
     var cars = [CarInfo]()
     
     var body: some View {
-        VStack {
-            List {
-                ForEach(cars) { car in
-                    VStack {
-                        CarDetailsView(name: car.name, distanceTravelled: car.distanceTravelled, capacity: car.capacity, theme: .dark)
-                            .buttonStyle(.plain)
-                        Divider()
-                            .background(Color.gray)
-                            .padding([.leading, .trailing], 8)
-                    }
-                    .listRowInsets(EdgeInsets())
-                    .background(Color.black)
+         VStack {
+             List {
+                 Section(header: sectionHeader) {
+                     ForEach(cars) { car in
+                         HStack(alignment: .center) {
+                             VStack(alignment: .leading) {
+                                 CarDetailsView(carInfo: car, theme: .dark)
+                                     .buttonStyle(.plain)
+                                     .padding(.top, .p10)
+                                 Divider()
+                                     .frame(maxWidth: .infinity)
+                                     .background(Color.gray)
+                                     .padding(.top, .p4)
+                             }
+                             .padding(.horizontal, .p20)
+                             .listRowInsets(EdgeInsets())
+                             .background(Color.black)
+                             .foregroundColor(.white)
+                             Spacer()
+                             tapIndicator
+                                 .padding(.trailing, .p20)
+                         }
+
+                     }
+                 }
+                 .listRowInsets(EdgeInsets())
+                 .background(Color.black)
+                 .foregroundColor(.white)
+             }
+             .listStyle(.plain)
+             .background(Color.black)
+             .navigationDestination(for: String.self) { car in
+                 Text(car)
+             }
+         }
+         .cornerRadius(.p20)
+     }
+    
+    private var sectionHeader: some View {
+        HStack {
+            Text("More Cars")
+                .foregroundColor(.white)
+                .padding(.leading, .p20)
+
+            Spacer()
+            Button {
+                // some action
+            } label: {
+                Image(YralIcon.more.icon)
                     .foregroundColor(.white)
-                }
+                    .padding(.trailing, .p20)
             }
-            .listStyle(.plain)
-            .background(Color.black)
-            .navigationDestination(for: String.self) { car in
-                Text(car)
-                    .padding()
-                    .background(Color.black)
-                    .cornerRadius(8)
-                    .foregroundColor(.white)
-            }
+
             
         }
-        
+        .padding(.vertical, .p10)
+        .background(Color.black)
     }
+    
+    private var tapIndicator: some View {
+        ZStack {
+            Circle()
+                .fill(Color.white)
+                .frame(width: .p32, height: .p32)
+
+            Image(YralIcon.rightArrow.icon)
+                .foregroundColor(.black)
+        }
+    }
+
 }
     
