@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180B24522CC26D2A00E65BFC /* CarBookingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24512CC26D2A00E65BFC /* CarBookingAppApp.swift */; };
+		180B24522CC26D2A00E65BFC /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24512CC26D2A00E65BFC /* CarBookingApp.swift */; };
 		180B24542CC26D2A00E65BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24532CC26D2A00E65BFC /* ContentView.swift */; };
 		180B24562CC26D2E00E65BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B24552CC26D2E00E65BFC /* Assets.xcassets */; };
 		180B24592CC26D2E00E65BFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B24582CC26D2E00E65BFC /* Preview Assets.xcassets */; };
 		180B24632CC26D3100E65BFC /* CarBookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B24622CC26D3100E65BFC /* CarBookingAppTests.swift */; };
 		180B246D2CC26D3100E65BFC /* CarBookingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B246C2CC26D3100E65BFC /* CarBookingAppUITests.swift */; };
 		180B246F2CC26D3100E65BFC /* CarBookingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B246E2CC26D3100E65BFC /* CarBookingAppUITestsLaunchTests.swift */; };
+		180B247C2CC26D9F00E65BFC /* YralSegmentControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B247B2CC26D9F00E65BFC /* YralSegmentControlBar.swift */; };
+		18F46F4B2CC280540003EFF7 /* NearByCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F4A2CC280540003EFF7 /* NearByCarView.swift */; };
+		18F46F4D2CC280970003EFF7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F4C2CC280970003EFF7 /* Coordinator.swift */; };
+		18F46F4F2CC2825B0003EFF7 /* NearByCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F4E2CC2825B0003EFF7 /* NearByCarViewModel.swift */; };
+		18F46F512CC285E70003EFF7 /* YralIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F502CC285E70003EFF7 /* YralIcon.swift */; };
+		18F46F532CC288570003EFF7 /* CarInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F522CC288570003EFF7 /* CarInfoView.swift */; };
+		18F46F552CC289280003EFF7 /* CarinfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F542CC289280003EFF7 /* CarinfoViewModel.swift */; };
+		18F46F592CC291E90003EFF7 /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F582CC291E90003EFF7 /* UIColor+Helper.swift */; };
+		18F46F5B2CC2920F0003EFF7 /* Color+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F5A2CC2920F0003EFF7 /* Color+Helper.swift */; };
+		18F46F5D2CC294CF0003EFF7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F5C2CC294CF0003EFF7 /* Utility.swift */; };
+		18F46F5F2CC2965C0003EFF7 /* CarOwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F5E2CC2965C0003EFF7 /* CarOwnerView.swift */; };
+		18F46F612CC29DF40003EFF7 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F602CC29DF40003EFF7 /* CarListView.swift */; };
+		18F46F632CC2A13E0003EFF7 /* CarDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F622CC2A13E0003EFF7 /* CarDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +47,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		180B244E2CC26D2A00E65BFC /* CarBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		180B24512CC26D2A00E65BFC /* CarBookingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingAppApp.swift; sourceTree = "<group>"; };
+		180B244E2CC26D2A00E65BFC /* CarRentalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarRentalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180B24512CC26D2A00E65BFC /* CarBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingApp.swift; sourceTree = "<group>"; };
 		180B24532CC26D2A00E65BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		180B24552CC26D2E00E65BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180B24582CC26D2E00E65BFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		180B245E2CC26D3100E65BFC /* CarBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180B245E2CC26D3100E65BFC /* CarRentalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRentalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180B24622CC26D3100E65BFC /* CarBookingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingAppTests.swift; sourceTree = "<group>"; };
-		180B24682CC26D3100E65BFC /* CarBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180B24682CC26D3100E65BFC /* CarRentalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRentalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180B246C2CC26D3100E65BFC /* CarBookingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingAppUITests.swift; sourceTree = "<group>"; };
 		180B246E2CC26D3100E65BFC /* CarBookingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		180B247B2CC26D9F00E65BFC /* YralSegmentControlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YralSegmentControlBar.swift; sourceTree = "<group>"; };
+		18F46F4A2CC280540003EFF7 /* NearByCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByCarView.swift; sourceTree = "<group>"; };
+		18F46F4C2CC280970003EFF7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		18F46F4E2CC2825B0003EFF7 /* NearByCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByCarViewModel.swift; sourceTree = "<group>"; };
+		18F46F502CC285E70003EFF7 /* YralIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YralIcon.swift; sourceTree = "<group>"; };
+		18F46F522CC288570003EFF7 /* CarInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoView.swift; sourceTree = "<group>"; };
+		18F46F542CC289280003EFF7 /* CarinfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarinfoViewModel.swift; sourceTree = "<group>"; };
+		18F46F582CC291E90003EFF7 /* UIColor+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
+		18F46F5A2CC2920F0003EFF7 /* Color+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Helper.swift"; sourceTree = "<group>"; };
+		18F46F5C2CC294CF0003EFF7 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		18F46F5E2CC2965C0003EFF7 /* CarOwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOwnerView.swift; sourceTree = "<group>"; };
+		18F46F602CC29DF40003EFF7 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
+		18F46F622CC2A13E0003EFF7 /* CarDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +100,7 @@
 		180B24452CC26D2A00E65BFC = {
 			isa = PBXGroup;
 			children = (
-				180B24502CC26D2A00E65BFC /* CarBookingApp */,
+				180B24502CC26D2A00E65BFC /* CarRentalApp */,
 				180B24612CC26D3100E65BFC /* CarBookingAppTests */,
 				180B246B2CC26D3100E65BFC /* CarBookingAppUITests */,
 				180B244F2CC26D2A00E65BFC /* Products */,
@@ -84,22 +110,29 @@
 		180B244F2CC26D2A00E65BFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				180B244E2CC26D2A00E65BFC /* CarBookingApp.app */,
-				180B245E2CC26D3100E65BFC /* CarBookingAppTests.xctest */,
-				180B24682CC26D3100E65BFC /* CarBookingAppUITests.xctest */,
+				180B244E2CC26D2A00E65BFC /* CarRentalApp.app */,
+				180B245E2CC26D3100E65BFC /* CarRentalAppTests.xctest */,
+				180B24682CC26D3100E65BFC /* CarRentalAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		180B24502CC26D2A00E65BFC /* CarBookingApp */ = {
+		180B24502CC26D2A00E65BFC /* CarRentalApp */ = {
 			isa = PBXGroup;
 			children = (
-				180B24512CC26D2A00E65BFC /* CarBookingAppApp.swift */,
+				18F46F622CC2A13E0003EFF7 /* CarDetailsView.swift */,
+				18F46F602CC29DF40003EFF7 /* CarListView.swift */,
+				18F46F5C2CC294CF0003EFF7 /* Utility.swift */,
+				18F46F4C2CC280970003EFF7 /* Coordinator.swift */,
+				18F46F492CC280290003EFF7 /* NearByCar */,
+				180B24812CC27EFC00E65BFC /* Common */,
+				180B24512CC26D2A00E65BFC /* CarBookingApp.swift */,
 				180B24532CC26D2A00E65BFC /* ContentView.swift */,
 				180B24552CC26D2E00E65BFC /* Assets.xcassets */,
 				180B24572CC26D2E00E65BFC /* Preview Content */,
+				18F46F5E2CC2965C0003EFF7 /* CarOwnerView.swift */,
 			);
-			path = CarBookingApp;
+			path = CarRentalApp;
 			sourceTree = "<group>";
 		};
 		180B24572CC26D2E00E65BFC /* Preview Content */ = {
@@ -127,12 +160,34 @@
 			path = CarBookingAppUITests;
 			sourceTree = "<group>";
 		};
+		180B24812CC27EFC00E65BFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				180B247B2CC26D9F00E65BFC /* YralSegmentControlBar.swift */,
+				18F46F502CC285E70003EFF7 /* YralIcon.swift */,
+				18F46F582CC291E90003EFF7 /* UIColor+Helper.swift */,
+				18F46F5A2CC2920F0003EFF7 /* Color+Helper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18F46F492CC280290003EFF7 /* NearByCar */ = {
+			isa = PBXGroup;
+			children = (
+				18F46F4A2CC280540003EFF7 /* NearByCarView.swift */,
+				18F46F4E2CC2825B0003EFF7 /* NearByCarViewModel.swift */,
+				18F46F522CC288570003EFF7 /* CarInfoView.swift */,
+				18F46F542CC289280003EFF7 /* CarinfoViewModel.swift */,
+			);
+			path = NearByCar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		180B244D2CC26D2A00E65BFC /* CarBookingApp */ = {
+		180B244D2CC26D2A00E65BFC /* CarRentalApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 180B24722CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingApp" */;
+			buildConfigurationList = 180B24722CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarRentalApp" */;
 			buildPhases = (
 				180B244A2CC26D2A00E65BFC /* Sources */,
 				180B244B2CC26D2A00E65BFC /* Frameworks */,
@@ -142,14 +197,14 @@
 			);
 			dependencies = (
 			);
-			name = CarBookingApp;
+			name = CarRentalApp;
 			productName = CarBookingApp;
-			productReference = 180B244E2CC26D2A00E65BFC /* CarBookingApp.app */;
+			productReference = 180B244E2CC26D2A00E65BFC /* CarRentalApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		180B245D2CC26D3100E65BFC /* CarBookingAppTests */ = {
+		180B245D2CC26D3100E65BFC /* CarRentalAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 180B24752CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingAppTests" */;
+			buildConfigurationList = 180B24752CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarRentalAppTests" */;
 			buildPhases = (
 				180B245A2CC26D3100E65BFC /* Sources */,
 				180B245B2CC26D3100E65BFC /* Frameworks */,
@@ -160,14 +215,14 @@
 			dependencies = (
 				180B24602CC26D3100E65BFC /* PBXTargetDependency */,
 			);
-			name = CarBookingAppTests;
+			name = CarRentalAppTests;
 			productName = CarBookingAppTests;
-			productReference = 180B245E2CC26D3100E65BFC /* CarBookingAppTests.xctest */;
+			productReference = 180B245E2CC26D3100E65BFC /* CarRentalAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		180B24672CC26D3100E65BFC /* CarBookingAppUITests */ = {
+		180B24672CC26D3100E65BFC /* CarRentalAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 180B24782CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingAppUITests" */;
+			buildConfigurationList = 180B24782CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarRentalAppUITests" */;
 			buildPhases = (
 				180B24642CC26D3100E65BFC /* Sources */,
 				180B24652CC26D3100E65BFC /* Frameworks */,
@@ -178,9 +233,9 @@
 			dependencies = (
 				180B246A2CC26D3100E65BFC /* PBXTargetDependency */,
 			);
-			name = CarBookingAppUITests;
+			name = CarRentalAppUITests;
 			productName = CarBookingAppUITests;
-			productReference = 180B24682CC26D3100E65BFC /* CarBookingAppUITests.xctest */;
+			productReference = 180B24682CC26D3100E65BFC /* CarRentalAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +261,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 180B24492CC26D2A00E65BFC /* Build configuration list for PBXProject "CarBookingApp" */;
+			buildConfigurationList = 180B24492CC26D2A00E65BFC /* Build configuration list for PBXProject "CarRentalApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +274,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				180B244D2CC26D2A00E65BFC /* CarBookingApp */,
-				180B245D2CC26D3100E65BFC /* CarBookingAppTests */,
-				180B24672CC26D3100E65BFC /* CarBookingAppUITests */,
+				180B244D2CC26D2A00E65BFC /* CarRentalApp */,
+				180B245D2CC26D3100E65BFC /* CarRentalAppTests */,
+				180B24672CC26D3100E65BFC /* CarRentalAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,8 +312,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F46F532CC288570003EFF7 /* CarInfoView.swift in Sources */,
+				180B247C2CC26D9F00E65BFC /* YralSegmentControlBar.swift in Sources */,
+				18F46F512CC285E70003EFF7 /* YralIcon.swift in Sources */,
 				180B24542CC26D2A00E65BFC /* ContentView.swift in Sources */,
-				180B24522CC26D2A00E65BFC /* CarBookingAppApp.swift in Sources */,
+				18F46F552CC289280003EFF7 /* CarinfoViewModel.swift in Sources */,
+				180B24522CC26D2A00E65BFC /* CarBookingApp.swift in Sources */,
+				18F46F5D2CC294CF0003EFF7 /* Utility.swift in Sources */,
+				18F46F4B2CC280540003EFF7 /* NearByCarView.swift in Sources */,
+				18F46F592CC291E90003EFF7 /* UIColor+Helper.swift in Sources */,
+				18F46F632CC2A13E0003EFF7 /* CarDetailsView.swift in Sources */,
+				18F46F4F2CC2825B0003EFF7 /* NearByCarViewModel.swift in Sources */,
+				18F46F612CC29DF40003EFF7 /* CarListView.swift in Sources */,
+				18F46F5F2CC2965C0003EFF7 /* CarOwnerView.swift in Sources */,
+				18F46F4D2CC280970003EFF7 /* Coordinator.swift in Sources */,
+				18F46F5B2CC2920F0003EFF7 /* Color+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +352,12 @@
 /* Begin PBXTargetDependency section */
 		180B24602CC26D3100E65BFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 180B244D2CC26D2A00E65BFC /* CarBookingApp */;
+			target = 180B244D2CC26D2A00E65BFC /* CarRentalApp */;
 			targetProxy = 180B245F2CC26D3100E65BFC /* PBXContainerItemProxy */;
 		};
 		180B246A2CC26D3100E65BFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 180B244D2CC26D2A00E65BFC /* CarBookingApp */;
+			target = 180B244D2CC26D2A00E65BFC /* CarRentalApp */;
 			targetProxy = 180B24692CC26D3100E65BFC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -421,7 +489,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CarBookingApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CarRentalApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -449,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CarBookingApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CarRentalApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -485,7 +553,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBookingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarBookingApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarRentalApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarRentalApp";
 			};
 			name = Debug;
 		};
@@ -504,7 +572,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBookingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarBookingApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarRentalApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarRentalApp";
 			};
 			name = Release;
 		};
@@ -545,7 +613,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		180B24492CC26D2A00E65BFC /* Build configuration list for PBXProject "CarBookingApp" */ = {
+		180B24492CC26D2A00E65BFC /* Build configuration list for PBXProject "CarRentalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				180B24702CC26D3100E65BFC /* Debug */,
@@ -554,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		180B24722CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingApp" */ = {
+		180B24722CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarRentalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				180B24732CC26D3100E65BFC /* Debug */,
@@ -563,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		180B24752CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingAppTests" */ = {
+		180B24752CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarRentalAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				180B24762CC26D3100E65BFC /* Debug */,
@@ -572,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		180B24782CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarBookingAppUITests" */ = {
+		180B24782CC26D3100E65BFC /* Build configuration list for PBXNativeTarget "CarRentalAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				180B24792CC26D3100E65BFC /* Debug */,

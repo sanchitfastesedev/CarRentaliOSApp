@@ -2,16 +2,16 @@
 //  CarBookingAppApp.swift
 //  CarBookingApp
 //
-//  Created by Apple on 18/10/24.
+//  Created by Sanchit Mehta on 18/10/24.
 //
 
 import SwiftUI
 
 @main
-struct CarBookingAppApp: App {
+struct CarBookingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NearByCarView()
         }
     }
 }
