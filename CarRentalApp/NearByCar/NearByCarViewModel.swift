@@ -13,6 +13,12 @@ struct CarAPIResponse: Decodable {
     let moreCars: [CarInfo]
 }
 
+enum ViewState {
+    case loading
+    case success(CarAPIResponse)
+    case error(String)
+}
+
 
 final class NearByCarViewModel: ObservableObject {
     
@@ -23,7 +29,7 @@ final class NearByCarViewModel: ObservableObject {
     
     
     @Published var selectedSegmentId: String = Segment.information.rawValue
-    @Published var carAPIResponse: CarAPIResponse?
+    @Published var state: ViewState = .loading
     
     
     var showInformationContent: Bool {
@@ -36,74 +42,78 @@ final class NearByCarViewModel: ObservableObject {
         SegmentControl(title: "Notification", icon: YralIcon.bell.icon, id: Segment.notification.rawValue)
     ]
     
-    init() {
-       guard let jsonData = """
-                {
-                  "info": {
-                    "id": "\(UUID().uuidString)",
-                    "name": "Fortuner GR",
-                    "image": "carFortuner",
-                    "capacity": 50,
-                    "distanceTravelled": 870,
-                    "carType": "diesel",
-                    "rentalCostPerHour": 4500
-                  },
-                  "carOwner": {
-                    "id": "\(UUID().uuidString)",
-                    "name": "Jan Cooper",
-                    "worth": 4253,
-                    "avatarURL": "carOwner"
-                  },
-                  "moreCars": [
-                    {
-                      "id": "\(UUID().uuidString)",
-                      "name": "Corolla Cross",
-                      "image": "carFortuner",
-                      "capacity": 4,
-                      "distanceTravelled": 150,
-                      "carType": "diesel",
-                      "rentalCostPerHour": 4500
-                    },
-                    {
-                      "id": "\(UUID().uuidString)",
-                      "name": "Iconic 5",
-                      "image": "carIconic",
-                      "capacity": 5,
-                      "distanceTravelled": 230,
-                      "carType": "electric",
-                      "rentalCostPerHour": 5000
-                    },
-                    {
-                      "id": "\(UUID().uuidString)",
-                      "name": "Swift",
-                      "image": "carSwift",
-                      "capacity": 5,
-                      "distanceTravelled": 230,
-                      "carType": "electric",
-                      "rentalCostPerHour": 5000
-                    },
-                    {
-                      "id": "\(UUID().uuidString)",
-                      "name": "Mercedes",
-                      "image": "mercedes",
-                      "capacity": 5,
-                      "distanceTravelled": 230,
-                      "carType": "diesel",
-                      "rentalCostPerHour": 5000
-                    },
+    func fetchData() {
+        state = .loading
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { // Simulating 2 seconds delay for API Call
+                   guard let jsonData = """
+                   {
+                     "info": {
+                       "id": "\(UUID().uuidString)",
+                       "name": "Fortuner GR",
+                       "image": "carFortuner",
+                       "capacity": 50,
+                       "distanceTravelled": 870,
+                       "carType": "diesel",
+                       "rentalCostPerHour": 4500
+                     },
+                     "carOwner": {
+                       "id": "\(UUID().uuidString)",
+                       "name": "Jan Cooper",
+                       "worth": 4253,
+                       "avatarURL": "carOwner"
+                     },
+                     "moreCars": [
+                       {
+                         "id": "\(UUID().uuidString)",
+                         "name": "Corolla Cross",
+                         "image": "carFortuner",
+                         "capacity": 4,
+                         "distanceTravelled": 150,
+                         "carType": "diesel",
+                         "rentalCostPerHour": 4500
+                       },
+                       {
+                         "id": "\(UUID().uuidString)",
+                         "name": "Iconic 5",
+                         "image": "carIconic",
+                         "capacity": 5,
+                         "distanceTravelled": 230,
+                         "carType": "electric",
+                         "rentalCostPerHour": 5000
+                       },
+                       {
+                         "id": "\(UUID().uuidString)",
+                         "name": "Swift",
+                         "image": "carSwift",
+                         "capacity": 5,
+                         "distanceTravelled": 230,
+                         "carType": "electric",
+                         "rentalCostPerHour": 5000
+                       },
+                       {
+                         "id": "\(UUID().uuidString)",
+                         "name": "Mercedes",
+                         "image": "mercedes",
+                         "capacity": 5,
+                         "distanceTravelled": 230,
+                         "carType": "diesel",
+                         "rentalCostPerHour": 5000
+                       }
+                     ]
+                   }
+                   """.data(using: .utf8) else {
+                       self.state = .error("Failed to load data.")
+                       return
+                   }
 
-                  ]
-                }
-                """.data(using: .utf8) else {
-           return
-       }
-        
-        let decoder = JSONDecoder()
-        do {
-            carAPIResponse = try decoder.decode(CarAPIResponse.self, from: jsonData)
-        } catch {
-            print("Error decoding JSON: \(error)")
-        }
+                   let decoder = JSONDecoder()
+                   do {
+                       let response = try decoder.decode(CarAPIResponse.self, from: jsonData)
+                       self.state = .success(response)
+                   } catch {
+                       self.state = .error("Error decoding JSON: \(error)")
+                   }
+               }
     }
 }
 

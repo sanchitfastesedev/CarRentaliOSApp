@@ -24,6 +24,9 @@ struct NearByCarView: View {
     var navigationStack: some View {
         Coordinator.View {
             contentView
+                .onAppear {
+                    viewModel.fetchData()
+                }
         }
     }
     
@@ -49,15 +52,28 @@ struct NearByCarView: View {
     
     @ViewBuilder
     private var informationContent: some View {
-        guard let data = viewModel.carAPIResponse else { return Color.clear }
-        return VStack(spacing: .p10) {
+        switch viewModel.state {
+        case .loading:
+            LoadingView()
+        case .error(let message):
+            ErrorView(message: message)
+        case .success(let data):
+            informationContent(with: data)
+        default:
+            EmptyView()
+        }
+    }
+    
+    @ViewBuilder
+    private func informationContent(with data: CarAPIResponse) -> some View {
+        VStack(spacing: .p10) {
             CarInfoView(info: data.info)
             carOwnerAndMapGrid(owner: data.carOwner)
             CarListView(cars: data.moreCars)
-            
             Spacer()
         }
     }
+    
     
     @ViewBuilder
     private func carOwnerAndMapGrid(owner: CarOwner) -> some View {

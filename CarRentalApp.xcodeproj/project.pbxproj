@@ -38,6 +38,8 @@
 		18F46F8D2CC2EF6F0003EFF7 /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F6A2CC2EF6F0003EFF7 /* Barlow-Bold.ttf */; };
 		18F46F8E2CC2EF6F0003EFF7 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F46F712CC2EF6F0003EFF7 /* Barlow-Light.ttf */; };
 		18F46F912CC2F4F30003EFF7 /* UIFont+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F902CC2F4F30003EFF7 /* UIFont+Helper.swift */; };
+		18F46F932CC35C350003EFF7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F922CC35C340003EFF7 /* LoadingView.swift */; };
+		18F46F952CC35C520003EFF7 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46F942CC35C520003EFF7 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		18F46F782CC2EF6F0003EFF7 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Thin.ttf"; sourceTree = "<group>"; };
 		18F46F7A2CC2EF6F0003EFF7 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		18F46F902CC2F4F30003EFF7 /* UIFont+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Helper.swift"; sourceTree = "<group>"; };
+		18F46F922CC35C340003EFF7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		18F46F942CC35C520003EFF7 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,8 @@
 				18F46F5A2CC2920F0003EFF7 /* Color+Helper.swift */,
 				18F46F662CC2ED4D0003EFF7 /* SectionHeader.swift */,
 				18F46F902CC2F4F30003EFF7 /* UIFont+Helper.swift */,
+				18F46F922CC35C340003EFF7 /* LoadingView.swift */,
+				18F46F942CC35C520003EFF7 /* ErrorView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -368,7 +374,9 @@
 				180B247C2CC26D9F00E65BFC /* YralSegmentControlBar.swift in Sources */,
 				18F46F512CC285E70003EFF7 /* YralIcon.swift in Sources */,
 				180B24522CC26D2A00E65BFC /* CarRentalApp.swift in Sources */,
+				18F46F952CC35C520003EFF7 /* ErrorView.swift in Sources */,
 				18F46F5D2CC294CF0003EFF7 /* Utility.swift in Sources */,
+				18F46F932CC35C350003EFF7 /* LoadingView.swift in Sources */,
 				18F46F4B2CC280540003EFF7 /* NearByCarView.swift in Sources */,
 				18F46F592CC291E90003EFF7 /* UIColor+Helper.swift in Sources */,
 				18F46F632CC2A13E0003EFF7 /* CarDetailsView.swift in Sources */,
