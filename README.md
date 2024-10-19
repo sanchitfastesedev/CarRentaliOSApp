@@ -31,16 +31,9 @@ Both iPad and iPhone are supported
 ## Features
 
 - **Car Information Display**: Displays detailed information about each car, including the owner’s details and other available cars.
-- **Notifications**: Users are notified when new updates or offers are available.
 - **Responsive Layout**: The app adapts to different screen sizes, ensuring a consistent user experience across devices.
 - **Segmented Control**: Easy navigation between "Information" and "Notification" views using a segmented control bar.
 
-## Folder Structure
-
-- **Views**: SwiftUI views representing the UI. Follows MVVM principles to separate UI logic from business logic.
-- **ViewModels**: Contains all the `ObservableObject` classes responsible for providing data to the views.
-- **Models**: Data models that represent the structure of the car data, owner details, and more.
-- **Coordinators**: Handles the app’s navigation and flow, ensuring a clean separation of concerns for routing.
 
 ## Installation
 
