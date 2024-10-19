@@ -42,6 +42,11 @@ Both iPad and iPhone are supported
 - **Models**: Data models that represent the structure of the car data, owner details, and more.
 - **Coordinators**: Handles the app’s navigation and flow, ensuring a clean separation of concerns for routing.
 
+## Installation
+
+- git clone https://github.com/sanchitfastesedev/CarRentaliOSApp.git
+- open CarRentalApp.xcodeproj in Xcode
+
 ## Video
 
 https://github.com/user-attachments/assets/1630caab-77b9-41b4-8d9b-67812b688f80
